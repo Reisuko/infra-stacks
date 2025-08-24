@@ -2,7 +2,7 @@
   "version": "3",
   "templates": [
     {
-      "id": "atm10",                         // <-- ID unique (string ou nombre)
+      "id": "atm10",
       "type": "standalone",
       "title": "ATM10 – All The Mods 10",
       "description": "Déploie le serveur ATM10 (Forge) à partir des Server Files CurseForge.",
