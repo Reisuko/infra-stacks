@@ -1,0 +1,27 @@
+{
+  "version": "2",
+  "templates": [
+    {
+      "type": 2,
+      "title": "ATM10 – All The Mods 10",
+      "description": "Déploie le serveur ATM10 (Forge) depuis les Server Files CurseForge.",
+      "note": "Renseigne l’URL du ZIP \"Server Files\" d’ATM10 (CurseForge).",
+      "platform": "linux",
+      "categories": ["games", "minecraft", "modded"],
+      "repository": {
+        "url": "https://github.com/<ton-username>/infra-stacks.git",
+        "stackfile": "stacks/atm10.yml"
+      },
+      "env": [
+        { "name": "CF_SERVER_MOD", "label": "URL ZIP Server Files (CurseForge)", "default": "" },
+        { "name": "INIT_MEMORY", "label": "Mémoire initiale (Xms)", "default": "8G" },
+        { "name": "MAX_MEMORY", "label": "Mémoire max (Xmx)", "default": "12G" },
+        { "name": "SERVER_PORT", "label": "Port externe", "default": "25565" },
+        { "name": "JAVA_VERSION", "label": "Version Java (8/11/17/21/auto)", "default": "auto" },
+        { "name": "ENABLE_WHITELIST", "label": "Whitelist (TRUE/FALSE)", "default": "FALSE" },
+        { "name": "DIFFICULTY", "label": "Difficulté", "default": "normal" },
+        { "name": "MOTD", "label": "MOTD", "default": "All The Mods 10" }
+      ]
+    }
+  ]
+}

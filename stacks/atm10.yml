@@ -1,0 +1,25 @@
+version: "3.8"
+
+services:
+  atm10:
+    image: itzg/minecraft-server:latest
+    container_name: atm10
+    restart: unless-stopped
+    ports:
+      - "${SERVER_PORT:-25565}:25565/tcp"
+    environment:
+      EULA: "TRUE"
+      TZ: "Europe/Paris"
+      TYPE: "CURSEFORGE"
+      CF_SERVER_MOD: "${CF_SERVER_MOD}"
+      INIT_MEMORY: "${INIT_MEMORY:-8G}"
+      MAX_MEMORY:  "${MAX_MEMORY:-12G}"
+      JAVA_VERSION: "${JAVA_VERSION:-auto}"
+      USE_AIKAR_FLAGS: "true"
+      ENABLE_WHITELIST: "${ENABLE_WHITELIST:-FALSE}"
+      DIFFICULTY: "${DIFFICULTY:-normal}"
+      MOTD: "${MOTD:-All The Mods 10}"
+    volumes:
+      - atm10_data:/data
+volumes:
+  atm10_data:
