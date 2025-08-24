@@ -5,11 +5,11 @@
       "type": 2,
       "title": "ATM10 – All The Mods 10",
       "description": "Déploie le serveur ATM10 (Forge) depuis les Server Files CurseForge.",
-      "note": "Renseigne l’URL du ZIP \"Server Files\" d’ATM10 (CurseForge).",
+      "note": "Colle l’URL du ZIP 'Server Files' d’ATM10 (CurseForge).",
       "platform": "linux",
       "categories": ["games", "minecraft", "modded"],
       "repository": {
-        "url": "https://github.com/<ton-username>/infra-stacks.git",
+        "url": "https://github.com/Reisuko/infra-stacks.git",
         "stackfile": "stacks/atm10.yml"
       },
       "env": [
