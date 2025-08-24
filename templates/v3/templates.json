@@ -2,10 +2,12 @@
   "version": "3",
   "templates": [
     {
-      "id": "atm10",
-      "type": "standalone",
-      "title": "ATM10 – All The Mods 10",
+      "id": 10001,
+      "type": 3,
+      "name": "atm10",
+      "title": "ATM10 - All The Mods 10",
       "description": "Déploie le serveur ATM10 (Forge) à partir des Server Files CurseForge.",
+      "note": "Colle l'URL du ZIP 'Server Files' ATM10 (CurseForge) dans CF_SERVER_MOD.",
       "platform": "linux",
       "categories": ["games", "minecraft", "modded"],
       "logo": "https://raw.githubusercontent.com/docker-library/docs/master/minecraft/logo.png",
@@ -16,12 +18,12 @@
       "env": [
         { "name": "CF_SERVER_MOD",   "label": "URL ZIP Server Files (CurseForge)", "default": "" },
         { "name": "INIT_MEMORY",     "label": "Mémoire initiale (Xms)",           "default": "8G" },
-        { "name": "MAX_MEMORY",      "label": "Mémoire max (Xmx)",                "default": "12G" },
-        { "name": "SERVER_PORT",     "label": "Port externe",                     "default": "25565" },
-        { "name": "JAVA_VERSION",    "label": "Version Java (8/11/17/21/auto)",   "default": "auto" },
-        { "name": "ENABLE_WHITELIST","label": "Whitelist (TRUE/FALSE)",           "default": "FALSE" },
-        { "name": "DIFFICULTY",      "label": "Difficulté",                        "default": "normal" },
-        { "name": "MOTD",            "label": "MOTD",                              "default": "All The Mods 10" }
+        { "name": "MAX_MEMORY",      "label": "Mémoire max (Xmx)",                 "default": "12G" },
+        { "name": "SERVER_PORT",     "label": "Port externe",                      "default": "25565" },
+        { "name": "JAVA_VERSION",    "label": "Version Java (8/11/17/21/auto)",    "default": "auto" },
+        { "name": "ENABLE_WHITELIST","label": "Whitelist (TRUE/FALSE)",            "default": "FALSE" },
+        { "name": "DIFFICULTY",      "label": "Difficulté",                         "default": "normal" },
+        { "name": "MOTD",            "label": "MOTD",                               "default": "All The Mods 10" }
       ]
     }
   ]
