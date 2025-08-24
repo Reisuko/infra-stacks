@@ -6,7 +6,6 @@
       "type": "standalone",
       "title": "ATM10 – All The Mods 10",
       "description": "Déploie le serveur ATM10 (Forge) à partir des Server Files CurseForge.",
-      "note": "Colle l’URL du ZIP 'Server Files' ATM10 (CurseForge) dans CF_SERVER_MOD.",
       "platform": "linux",
       "categories": ["games", "minecraft", "modded"],
       "logo": "https://raw.githubusercontent.com/docker-library/docs/master/minecraft/logo.png",
