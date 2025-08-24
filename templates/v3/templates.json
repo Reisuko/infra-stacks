@@ -18,7 +18,7 @@
       "env": [
         { "name": "CF_SERVER_MOD",   "label": "URL ZIP Server Files (CurseForge)", "default": "" },
         { "name": "INIT_MEMORY",     "label": "Mémoire initiale (Xms)",           "default": "2G" },
-        { "name": "MAX_MEMORY",      "label": "Mémoire max (Xmx)",                 "default": "64G" },
+        { "name": "MAX_MEMORY",      "label": "Mémoire max (Xmx)",                 "default": "24G" },
         { "name": "SERVER_PORT",     "label": "Port externe",                      "default": "25565" },
         { "name": "JAVA_VERSION",    "label": "Version Java (8/11/17/21/auto)",    "default": "auto" },
         { "name": "ENABLE_WHITELIST","label": "Whitelist (TRUE/FALSE)",            "default": "FALSE" },
