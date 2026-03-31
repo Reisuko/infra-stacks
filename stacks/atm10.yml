@@ -1,34 +1,25 @@
 version: "3.8"
 
 services:
-  createessentials:
+  atm10:
     image: itzg/minecraft-server:latest
-    container_name: createessentials
+    container_name: ce
     restart: unless-stopped
-
     ports:
-      - "${SERVER_PORT}:25565"
-
+      - "${SERVER_PORT:-25565}:25565/tcp"
     environment:
       EULA: "TRUE"
       TZ: "Europe/Paris"
-
       TYPE: "CURSEFORGE"
       CF_SERVER_MOD: "${CF_SERVER_MOD}"
-      CF_BASE_DIR: "/data"
-
-      VERSION: "1.21.1"
-      INIT_MEMORY: "${INIT_MEMORY}"
-      MAX_MEMORY: "${MAX_MEMORY}"
-      JAVA_VERSION: "${JAVA_VERSION}"
+      INIT_MEMORY: "${INIT_MEMORY:-2G}"
+      MAX_MEMORY:  "${MAX_MEMORY:-24G}"
+      JAVA_VERSION: "${JAVA_VERSION:-auto}"
       USE_AIKAR_FLAGS: "true"
-
-      ENABLE_WHITELIST: "${ENABLE_WHITELIST}"
-      DIFFICULTY: "${DIFFICULTY}"
-      MOTD: "${MOTD}"
-
+      ENABLE_WHITELIST: "${ENABLE_WHITELIST:-FALSE}"
+      DIFFICULTY: "${DIFFICULTY:-normal}"
+      MOTD: "${MOTD:-All The Mods 10}"
     volumes:
       - ce_data:/data
-
 volumes:
   ce_data:
