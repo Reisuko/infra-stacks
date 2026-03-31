@@ -10,7 +10,7 @@ services:
     environment:
       EULA: "TRUE"
       TZ: "Europe/Paris"
-      TYPE: "CURSEFORGE"
+      TYPE: "MODPACK"
       CF_SERVER_MOD: "${CF_SERVER_MOD}"
       INIT_MEMORY: "${INIT_MEMORY:-2G}"
       MAX_MEMORY:  "${MAX_MEMORY:-24G}"
