@@ -3,7 +3,7 @@ version: "3.8"
 services:
   atm10:
     image: itzg/minecraft-server:latest
-    container_name: atm10
+    container_name: ce
     restart: unless-stopped
     ports:
       - "${SERVER_PORT:-25565}:25565/tcp"
@@ -20,6 +20,6 @@ services:
       DIFFICULTY: "${DIFFICULTY:-normal}"
       MOTD: "${MOTD:-All The Mods 10}"
     volumes:
-      - atm10_data:/data
+      - ce_data:/data
 volumes:
-  atm10_data:
+  ce_data:
