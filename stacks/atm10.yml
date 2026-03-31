@@ -16,6 +16,8 @@ services:
       MAX_MEMORY:  "${MAX_MEMORY:-24G}"
       JAVA_VERSION: "${JAVA_VERSION:-auto}"
       USE_AIKAR_FLAGS: "true"
+      FTB_FORCE_JAVA: "true"
+      SKIP_JAVA_CHECK: "true"
       ENABLE_WHITELIST: "${ENABLE_WHITELIST:-FALSE}"
       DIFFICULTY: "${DIFFICULTY:-normal}"
       MOTD: "${MOTD:-All The Mods 10}"
